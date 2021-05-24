@@ -1,0 +1,77 @@
+%=========================================================
+
+% Here you can choose to compile with or without solutions.
+% However, this definition is ignored if you use any
+% command from the `Makefile`.
+\providecommand{\withSol}{\iftrue}
+
+%=========================================================
+
+\documentclass
+[twoside,english,colorbacktitle,accentcolor=tud9c]
+{tudexercise}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{units}
+\usepackage{subfigure}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{fancyref}
+\usepackage[ngerman,english]{babel}
+
+%=========================================================
+
+\def\homework{1}
+\def\homeworkVer{1}
+\def\homeworkSolVer{1}
+\def\lecture{Statistical Machine Learning}
+\def\semester{Summer Term 2021}
+\def\prof{Prof. Stefan Roth, Dr. Simone Schaub-Meyer}
+\def\deadline{Due date: 25. May 2018}
+
+%=========================================================
+
+\ifcsname withSol\endcsname\else
+  \expandafter\let\csname withSol\expandafter\endcsname
+                  \csname iffalse\endcsname
+\fi
+
+\withSol
+	\usepackage[solutions]{iasHomework}
+\else
+	\usepackage{iasHomework}
+\fi
+
+%=========================================================
+
+% USE YOUR NAMES!
+\newcommand{\studentdata}{}
+%\newcommand{\studentdata}{John Doe, 1234567 \qquad Jane Doe, 7654321}
+
+\begin{document}
+	
+	\hwtitle{}
+	\maketitle
+	
+	\begin{examheader}
+		\normalsize
+		\vspace{-1em}
+		Stefanie Martin, Maximilian Nothnagel \hfill \studentdata{}
+		\vspace{-1em}
+	\end{examheader} 
+	
+	\textbf{Stefanie Martin, Maximilian Nothnagel \hfill \studentdata{}}
+	
+	\input{task3_1.tex}
+	\input{task4.tex}
+	
+\end{document}
+
