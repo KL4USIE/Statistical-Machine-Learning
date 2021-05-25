@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
 
 def markovChain(s0, p, g):
     s = s0.copy()
@@ -17,11 +15,3 @@ n = np.arange(0, 19, 1)
 
 gen18 = markovChain(s0, p, 18)
 gen18prog = markovChain(s1, p, 18)
-
-plt.plot(n, gen18, 'b')
-plt.plot(n, gen18prog, 'r')
-plt.xlabel('Generations')
-plt.ylabel('Probability')
-plt.title('Virus through the generations Task 3')
-plt.grid(True)
-plt.show()

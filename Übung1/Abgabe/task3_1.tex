@@ -174,14 +174,54 @@ And that is not a linear operator.
 		
 		\item \lstinputlisting[language=Python]{virus_Task3.py}
 		\includegraphics{plot_Markov}\\
-		\item 
-		
-		\end{enumerate}
-		
-	\end{answer}
-		
-	\end{question}
+		\item
+		After 6 timesteps does the ratios stop to change significantly. Stable probability:
+		\begin{equation}
+								P_{} = 
+\begin{pmatrix}
+0,42 & 0,974\\
+0,58 & 0,026
 
-	
+\end{pmatrix}
+		\end{equation}
+				\begin{equation}
+								\overline{X} = 
+\begin{pmatrix}
+A\\
+B
+
+\end{pmatrix}
+		\end{equation}
+						\begin{equation}
+								P* \overline{X} = \overline{X} \leftrightarrow \begin{pmatrix}
+0,42 & 0,974\\
+0,58 & 0,026
+
+\end{pmatrix} * \begin{pmatrix}
+A\\
+B
+
+\end{pmatrix} = \begin{pmatrix}
+A\\
+B
+
+\end{pmatrix}
+		\end{equation}
+		\begin{equation}
+		0,42 A + 0,5B = A \Rightarrow 0,5B = A - 0,42A 
+		\Rightarrow B = \frac{ 25 }{ 29 } = 0,86
+		\end{equation}
+		
+				\begin{equation}
+				0,58A + 0,026B = B
+		\end{equation}
+				
+		\begin{equation}
+				A + B = 1 \Rightarrow  A + 0,86 = 1 \Rightarrow  A = 0,14
+		\end{equation}
+		We can see the probability converge to our solution.
+		\end{enumerate}
+	\end{answer}	
+	\end{question}	
 \end{questions}
 
