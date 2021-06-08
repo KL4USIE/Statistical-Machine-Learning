@@ -38,7 +38,7 @@
 		if curIteration % 2000 == 0: 
 		input("Press Enter to continue...")
 		
-		print("final X is", curX, "; with f\'(",curX,")= ", solveDerivative(curX) )	
+		print("final X is", curX, "; with f'(",curX,")= ", solveDerivative(curX) )	
 		\end{python}
 	Learning rate impacts the size of the "steps" we take in each iteration. Since we are approximating, we generally step over the lowest point at some point, and then start stepping back and forth over the lowest point. \\
 	A smaller learning rate will lead to smaller steps while moving towards the lowest point, but to a larger gap created by stepping back and forth over the lowest point once it has been found.\\
@@ -46,7 +46,7 @@
 	Choose the learning rate just right to get a accurate conclusion, while still arriving at the conclusion in most cases.
 	(conclusion meaning the lowest point)\\
 	Samples taken from one running of the script: \\
-%	\begin{equation*}
+
 		\begin{align*}
 			\#0001 & f'(18,0) = 2196034,0\\
 			\#1000 & f'( 1,8132) = 345,853\\
@@ -60,6 +60,21 @@
 			\#9000 & f'( 1,61718799) = 0,0021822\\
 			\#10000 & f'(1,6171806) = 0,0005131
 		\end{align*}
-%	\end{equation*}
+
+\subsection{1b) Gradient Descent Variants}
+\subsubsection{1)}
+	% https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent
+	% https://en.wikipedia.org/wiki/Gradient_descent#:~:text=Gradient%20descent%20is%20a%20first,the%20direction%20of%20steepest%20descent
+	% https://towardsdatascience.com/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a
+	Batch Gradient Descent: From a random starting point, move toward the direction of lowest gradient a distance based on the Gradient. Repeat. Very accurate, but computationally expensive.\\
+	Stochastic Gradient Descent: From a random starting point, pick a random point P2 in the sorrounding. move roughly towards P2, following the direction of the lowest Gradient. Repeat. This reduces the computing in each step, opting instead for random generation. \\
+	%Mini-Batch habe ich nicht so ganz verstanden
+	Mini-Batch Gradient Descent: Create Mini-Batch of datapoints out of the whole set. Compute mean gradient for the Mini-batch, use it in selecting for the next Mini-Batch. Repeat. Saves Memory, by only ever working on small parts of the dataset.
+	
+\subsubsection{2)}
+	Momentum is the idea of taking greater or smaller steps based on the results of each step. This is easily recognized in Batch/Vanilla Gradient Descent, and also present in the other variants.
+	
+\section{Task 2: Density Estimation - MLE}
+\subsection{2a) Maximization Likelihood Estimate of the Exponential Distribution}
 	
 \end{document}
