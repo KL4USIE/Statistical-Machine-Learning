@@ -60,6 +60,7 @@
 			\#9000 & f'( 1,61718799) = 0,0021822\\
 			\#10000 & f'(1,6171806) = 0,0005131
 		\end{align*}
+	%TODO visueller Graph, habe da keine Erfahrung mit in Latex
 
 \subsection{1b) Gradient Descent Variants}
 \subsubsection{1)}
@@ -76,5 +77,36 @@
 	
 \section{Task 2: Density Estimation - MLE}
 \subsection{2a) Maximization Likelihood Estimate of the Exponential Distribution}
+	Using Python we computed the maximum propabilities of the given function for x=[0..100] and s=[-40..40]\\
+	$\frac{1}{s} * e^{-\frac{x}{s} }$		\\
+	\begin{align*}
+	Maximum of s= &-40 : & -0.025\\
+	Maximum of s= &-20 : & -0.05\\
+	Maximum of s= &-15 : & -0.06666666666666667\\
+	Maximum of s= &-10 : & -0.1\\
+	Maximum of s= &-5 :  &-0.2\\
+	Maximum of s= &-4 :  &-0.25\\
+	Maximum of s= &-3 :  &-0.3333333333333333\\
+	Maximum of s= &-2 :  &-0.5\\
+	Maximum of s= &-1 :  &-1.0\\
+	Maximum of s= &0.01 : & -100.0\\
+	Maximum of s= &0 :  &Undefined\\
+	Maximum of s= &0.01 :&  100.0\\
+	Maximum of s= &1 :  &1.0\\
+	Maximum of s= &2 :  &0.5\\
+	Maximum of s= &3 :  &0.3333333333333333\\
+	Maximum of s= &4 :  &0.25\\
+	Maximum of s= &5 :  &0.2\\
+	Maximum of s= &10 :  &0.1\\
+	Maximum of s= &15 :  &0.06666666666666667\\
+	Maximum of s= &20 :  &0.05\\
+	Maximum of s= &40 :  &0.025\\
+	\end{align*}
+	When s converges towards 0, the likelihood rises to infinity.\\
+	When s rises towards $\pm\infty$ , the likelihood approaches 0
 	
+\section{Task 3: Density Estimation}
+\subsection{3a) Prior Probabilities}
+
+
 \end{document}

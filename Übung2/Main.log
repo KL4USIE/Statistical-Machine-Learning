@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.30)  8 JUN 2021 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.30)  8 JUN 2021 14:30
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -253,8 +253,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--49
 
 [1
 
-{C:/Users/Maxi-PC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-(Main.aux) ) 
+{C:/Users/Maxi-PC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+[2] [3] (Main.aux) ) 
 Here is how much of TeX's memory you used:
  4869 strings out of 479334
  67267 string characters out of 2856134
@@ -263,20 +267,24 @@ Here is how much of TeX's memory you used:
  409318 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,8n,78p,457b,1615s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maxi-PC/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maxi-PC/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Maxi
--PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
-Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl
-tt10.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy7.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmtt8.pfb>
-Output written on Main.pdf (2 pages, 111176 bytes).
+<C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Maxi-PC/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maxi-PC/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Maxi-P
+C/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Us
+ers/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/Maxi-PC/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><C:/Users/Maxi-PC/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maxi-PC/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Ma
+xi-PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on Main.pdf (3 pages, 148554 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
