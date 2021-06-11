@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6d799829-6f8e-4163-a135-44079b9d52b0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Task2.py</StartupFile>
+    <StartupFile>Task3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Task3.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Task2.py">
       <SubType>Code</SubType>
     </Compile>
