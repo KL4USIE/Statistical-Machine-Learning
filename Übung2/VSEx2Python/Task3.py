@@ -5,7 +5,8 @@ d = '.\dataSets\Aufgabe3'
 
 arrayC1 = []
 arrayC2 = []
-
+C1Prob = 0
+C2Prob = 0
 
 #Reads files, saves them in the above variables
 def ReadFiles():
@@ -29,10 +30,7 @@ def ReadFiles():
                 if(filename.endswith("2.txt")):
                     arrayC2.append(float(lineArray[0]))
                     arrayC2.append(float(lineArray[1]))
-
-    print("Listing C1: \n", arrayC1)
-    C1Prob = 0
-    C2Prob = 0
+    print("Listing C1: \n", arrayC1)   
     for prob in arrayC1:
         C1Prob += prob
     for prob in arrayC2:
