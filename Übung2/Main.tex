@@ -8,6 +8,7 @@
 \usepackage{pythonhighlight}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage[font=small,labelfont=bf]{caption}
 
 \begin{document}
 	
@@ -46,7 +47,6 @@
 	Choose the learning rate just right to get a accurate conclusion, while still arriving at the conclusion in most cases.
 	(conclusion meaning the lowest point)\\
 	Samples taken from one running of the script: \\
-
 		\begin{align*}
 			\#0001 & f'(18,0) = 2196034,0\\
 			\#1000 & f'( 1,8132) = 345,853\\
@@ -60,7 +60,11 @@
 			\#9000 & f'( 1,61718799) = 0,0021822\\
 			\#10000 & f'(1,6171806) = 0,0005131
 		\end{align*}
-	%TODO visueller Graph, habe da keine Erfahrung mit in Latex
+	\begin{minipage}{0.9\linewidth}
+		\includegraphics[width=1\textwidth]{Graph1.png}
+		\captionof{figure}{Graph for f'(x) throughout the cycles.}
+	\end{minipage}\\
+	Cycle \#1 excluded for scaling. We can observe a rapid descent of the gradient, slowing down as it approaches 0
 
 \subsection{1b) Gradient Descent Variants}
 \subsubsection{1)}
