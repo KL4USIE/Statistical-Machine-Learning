@@ -112,11 +112,25 @@
 \section{Task 3: Density Estimation}
 \subsection{3a) Prior Probabilities}
 Putting the data into a python script and averaging out the classes yields the following priors: \\
-C1 averaged: $-0.7750366930281244$ \\
-C2 averaged: $12.627232147035425$
+C1 Prior: $0.24$ \\
+C2 Prior: $0.76$
 
 \subsection{3b) Biased ML Estimate}
 An estimator's bias describes a tendency of the estimates to differ from the parameter being estimated in a consistent way.
+
+Calculate the mean and deviation:\\
+\includegraphics{3b1.png}\\
+\includegraphics{3b2.png}\\
+$C1 Mean: -0.775 ; C2 mean: 3.986$\\
+$C1 deviation: 2.531 ; C2 deviation: 1.861$\\
+Maximum likelihood function for Gaussian:\\
+$p(x|\mu, \sigma) = \frac{1}{\sqrt{2\pi\sigma}} * e^{\frac{-(x-\mu)^2}{2\sigma^2}}$\\
+Plugged in:\\
+$p(x| C_1) = 0,158 e^{\frac{-x^2}{12,812} + 0,121x + 0,468}$\\
+$p(x| C_2) = 0,214 e^{\frac{-x^2}{6,927} - 1,151x + 2,294}$\\
+\includegraphics{3b3.png}\\
+Max Likelihoods by summing up the results for each x:\\
+$C1 MaxLikelihood: 53.60138072754072 ; C2 MaxLikelihood: 230.85569153085527$
 
 \section{Task 4: Non-parametric Density Estimation}
 \subsection{4a) Histogram}
@@ -130,31 +144,31 @@ For a bin size of 0.02 the histogram is not smooth enough. For a bin size of 0.5
 
 \subsection{4b) Kernel Density Estimate}
 \includegraphics{kde.png}\\
-The log-likelihood for 0.03 is −674.25, for 0.2 it is −716.46 and for 0.8 −794.57. There for it looks like 0.03 is performing the best.
+The log-likelihood for $0.03$ is $-674.25$, for $0.2$ it is $-716.46$ and for $0.8$ $-794.57$. There for it looks like $0.03$ is performing the best.
 \lstinputlisting[language=Python]{kde.py} 
 
 \subsection{4c) K-Nearest Neighbors}
 \includegraphics{knn.png}\\
-For k of 2 we get an log-likelihood of -1256.04. For k of 8 we get an log-likelihood of -1127.73 and for k of 35 we get -949.19. There for it looks like 35 is perfor,ing best.
+For k of 2 we get an log-likelihood of -1256.04. For k of 8 we get an log-likelihood of -1127.73 and for k of 35 we get -949.19. There for it looks like 35 is performing best.
 
 \lstinputlisting[language=Python]{knn.py}
 
 \subsection{4d) Comparison of the Non-Parametric Methods}
 \includegraphics{vergleich1.png}\\
 \includegraphics{vergleich2.png}\\
-We use the test data to build up oir model / to fit our model. Then later we use the test data to vailidate / test our model.
+We use the test data to build up our model / to fit our model. Then later we use the test data to validate / test our model.
 \section{Task 5: Expectation Maximization}
-\subsection{4a) Gaussian Mixture Update Rules}
+\subsection{5a) Gaussian Mixture Update Rules}
 
 - Compute the E-Step using Gaussian
-E = Q(\Theta , \Theta^{i-1}) = \[ \int_{}^{} \, \] P(Y  \vert X, \Theta^{i-1}) log P(X,Y \vert \Theta) dy 
+$E = Q(\Theta , \Theta^{i-1}) = [ \int_{}^{} \, ] P(Y  \vert X, \Theta^{i-1}) log P(X,Y \vert \Theta) dy $
 \newline
 with X incomplete data and Y Hidden Data
 \newline
 - Update Rule
-M = \Theta^{i} = arg \[\max_{\Theta}\] E
+$M = \Theta^{i} = arg [\max_{\Theta}] E$
 
-\subsection{4d) EM}
+\subsection{5d) EM}
 \includegraphics{em1.png}\\
 \includegraphics{em3.png}\\
 \includegraphics{em5.png}\\

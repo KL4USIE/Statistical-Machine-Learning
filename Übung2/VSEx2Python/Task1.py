@@ -1,7 +1,5 @@
 import math
 import random
-import matplotlib.pyplot as plt
-import numpy as np
 #Task 1a
 
 #Function for calculating f'(x)
@@ -27,9 +25,6 @@ for curIteration in range(1, 10000):
 		input("Press Enter to continue...")
 
 print("final X is", curX, "; with f\'(",curX,")= ", solveDerivative(curX) )
-
-fig, ax = plt.subplots()  # Create a figure containing a single axes.
-ax.plot([1, 2, 3, 4], [1, 4, 2, 3])  # Plot some data on the axes.
 
 #Learning rate impacts the size of the "steps" we take in each iteration. Since we are approximating, we generally step over the lowest point at some point, and then start stepping back and forth over the lowest point. A smaller learning rate will lead to smaller steps..
 #while moving towards the lowest point, but to a larger gap created by stepping back and forth over the lowest point once it has been found.
